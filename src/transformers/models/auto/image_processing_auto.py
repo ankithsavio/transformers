@@ -56,7 +56,7 @@ else:
     IMAGE_PROCESSOR_MAPPING_NAMES = OrderedDict(
         [
             ("align", ("EfficientNetImageProcessor",)),
-            ("aria", ("AriaImageProcessor")),
+            ("aria", ("AriaImageProcessor",)),
             ("beit", ("BeitImageProcessor",)),
             ("bit", ("BitImageProcessor",)),
             ("blip", ("BlipImageProcessor", "BlipImageProcessorFast")),
@@ -106,7 +106,7 @@ else:
             ("levit", ("LevitImageProcessor",)),
             ("llava", ("LlavaImageProcessor", "LlavaImageProcessorFast")),
             ("llava_next", ("LlavaNextImageProcessor", "LlavaNextImageProcessorFast")),
-            ("llava_next_video", ("LlavaNextVideoImageProcessor",)),
+            ("llava_next_video", ("LlavaNextVideoImageProcessor", "LlavaNextVideoImageProcessorFast")),
             ("llava_onevision", ("LlavaOnevisionImageProcessor", "LlavaOnevisionImageProcessorFast")),
             ("mask2former", ("Mask2FormerImageProcessor",)),
             ("maskformer", ("MaskFormerImageProcessor",)),
@@ -142,7 +142,7 @@ else:
             ("shieldgemma2", ("Gemma3ImageProcessor", "Gemma3ImageProcessorFast")),
             ("siglip", ("SiglipImageProcessor", "SiglipImageProcessorFast")),
             ("siglip2", ("Siglip2ImageProcessor", "Siglip2ImageProcessorFast")),
-            ("superglue", "SuperGlueImageProcessor"),
+            ("superglue", ("SuperGlueImageProcessor",)),
             ("swiftformer", ("ViTImageProcessor", "ViTImageProcessorFast")),
             ("swin", ("ViTImageProcessor", "ViTImageProcessorFast")),
             ("swin2sr", ("Swin2SRImageProcessor",)),
